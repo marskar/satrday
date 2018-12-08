@@ -1,31 +1,37 @@
----
-title: "Respectful and Empathic Code and Docs"
-subtitle: "SatRday DC"
-author: "Martin Skarzynski"
-date: "`r Sys.Date()`"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Respectful and Empathic Code and Docs</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Martin Skarzynski" />
+    <meta name="date" content="2018-12-07" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Respectful and Empathic Code and Docs
+## SatRday DC
+### Martin Skarzynski
+### 2018-12-07
+
 ---
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
+
+
 
 # About me
 
 - Cancer Prevention Fellow 
   - at National Cancer Institute
-- Co-Chair, Bioinformatics & Data Science
+- Co-Chair, Bioinformatics &amp; Data Science
   - at Foundation for Advanced Education in the Sciences
 - Website: https://marskar.github.io
 - Twitter: [@marskar](https://twitter.com/marskar)
 
-.center[<img src='https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg' width='300px'></img>]
+.center[&lt;img src='https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg' width='300px'&gt;&lt;/img&gt;]
 
 ---
 
@@ -33,7 +39,7 @@ options(htmltools.dir.version = FALSE)
 
 True story: helping a friend debug a Keras model in a Jupyter notebook
 
-.center[<img src='nb720.gif' width='800px'></img>]
+.center[&lt;img src='nb720.gif' width='800px'&gt;&lt;/img&gt;]
 
 
 ---
@@ -65,7 +71,7 @@ Though Hadley prefers to call it a portmanteau.
 ---
 
 
-.center[<img src='punny.png' width='500px'></img>]
+.center[&lt;img src='punny.png' width='500px'&gt;&lt;/img&gt;]
 
 ---
 # Notebooks
@@ -75,9 +81,9 @@ Though Hadley prefers to call it a portmanteau.
 - built on IPython by [Fernando Perez (@fperez_org)](https://twitter.com/fperez_org)
 - combine [Markdown](https://www.markdownguide.org/) text, code, and output
 - help data scientists communicate goals, methods, and results
-- used in [academia](https://www.oreilly.com/ideas/all-the-cool-kids-are-doing-it-maybe-we-should-too), and at many companies, e.g. [Amazon](https://www.oreilly.com/ideas/machine-learning-and-ai-technologies-and-platforms-at-aws), [Netflix](https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6), & [PayPal](https://medium.com/paypal-engineering/paypal-notebooks-powered-by-jupyter-fd0067bd00b0)
+- used in [academia](https://www.oreilly.com/ideas/all-the-cool-kids-are-doing-it-maybe-we-should-too), and at many companies, e.g. [Amazon](https://www.oreilly.com/ideas/machine-learning-and-ai-technologies-and-platforms-at-aws), [Netflix](https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6), &amp; [PayPal](https://medium.com/paypal-engineering/paypal-notebooks-powered-by-jupyter-fd0067bd00b0)
 
-.center[<img src='https://cdn-images-1.medium.com/max/2000/0*QLer52L9p-T72bGW' width='500px'></img>]
+.center[&lt;img src='https://cdn-images-1.medium.com/max/2000/0*QLer52L9p-T72bGW' width='500px'&gt;&lt;/img&gt;]
 
 ---
 # Joel doesn't like notebooks
@@ -149,10 +155,58 @@ Though Hadley prefers to call it a portmanteau.
 - [Docstrings](https://www.datacamp.com/community/tutorials/docstrings-python) (with examples!)
 - [`if __name__ == '__main__':`](https://docs.python.org/3/library/__main__.html)
 - Function call(s), e.g. `doctest.testmod(verbose=True)`
-- [doctest](https://docs.python.org/3/library/doctest.html): docstring examples -> test suite (with [`unittest` API](https://docs.python.org/3/library/doctest.html#unittest-api))
+- [doctest](https://docs.python.org/3/library/doctest.html): docstring examples -&gt; test suite (with [`unittest` API](https://docs.python.org/3/library/doctest.html#unittest-api))
 - run test suite with [`unittest`](https://docs.python.org/3/library/unittest.html) or [`pytest`](https://docs.pytest.org/en/latest/)
 - use [cookiecutter](https://github.com/audreyr/cookiecutter#cookiecutter) for project structure
 - [deploy projects/packages to PyPI](https://packaging.python.org/tutorials/packaging-projects/)
 
 ---
 # Thanks for listening!
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
