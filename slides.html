@@ -118,6 +118,20 @@ by [Hilary Parker aka hspter](https://twitter.com/hspter)
 
 .center[&lt;a href="https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/"&gt;&lt;img src='scratch.png' width='800px'&gt;&lt;/img&gt;&lt;/a&gt;]
 
+---
+# Tools 1: `usethis`
+
+.center[&lt;a href="https://usethis.r-lib.org/"&gt;&lt;img src='usethis.png' width='800px'&gt;&lt;/img&gt;&lt;/a&gt;]
+
+---
+# Tools 2: `testthat`
+
+.center[&lt;a href="https://github.com/r-lib/testthat#testthat-"&gt;&lt;img src='testthat.png' width='800px'&gt;&lt;/img&gt;&lt;/a&gt;]
+
+---
+# Tools 3: `roxygen2` &amp; `devtools`
+
+.center[&lt;a href="https://rawgit.com/rstudio/cheatsheets/master/package-development.pdf"&gt;&lt;img src='devtools.png' width='800px'&gt;&lt;/img&gt;&lt;/a&gt;]
 
 ---
 # Minimal package demo
@@ -125,7 +139,7 @@ by [Hilary Parker aka hspter](https://twitter.com/hspter)
 .center[&lt;a href="https://github.com/marskar/respect"&gt;&lt;img src='demo.png' width='800px'&gt;&lt;/img&gt;&lt;/a&gt;]
 
 ---
-# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2)
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 1
 
 ```r
 #' ---
@@ -144,20 +158,142 @@ if (!require(usethis)) install.packages('usethis')
 #'
 #' ### Create a new package called `respect`
 #'
-#' `usethis::create_package('respect')`
+usethis::create_package('respect')
 #'
 #' New project will open, copy this script there
 ```
 
 ---
-# Write packages!
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 2
 
-- usethis and devtools make it easy
-- work out in the open on GitHub
-- help others help you
+```r
+#' # Step 2: Set up version control and GitHub
+#'
+#' ### Set up git
+usethis::use_git()
+#'
+#' Git pane in RStudio is available after a restart
+#'
+#' Pull and Push are unavailable for now
+#'
+#' ### Set up git user.name and user.email
+#'
+usethis::use_git_config(user.name = "Martin Skarzynski", user.email = "myemail@example.com")
+usethis::use_git_config()
+#' ### Get a GitHub Personal Access Token (PAT)
+usethis::browse_github_pat()
+#' ### Add the PAT to .Renviron,
+#'
+#' e.g. GITHUB_PAT=8c70fd8419398999c9ac5bacf3192882193cadf2
+#'
+usethis::edit_r_environ()
+```
+
+---
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 3
+
+```r
+#' ### View DESCRIPTION defaults
+usethis::use_description_defaults()
+#' ### Edit DESCRIPTION title, name, and description
+usethis::use_description(
+  fields = list(Title = "Code and Docs that Respect People",
+                `Authors@R` = 'person("Martin", "Skarzynski", email = "myemail@example.com", role = c("aut", "cre"))',
+                Description = 'This R Package demonstrates examples of best practices. It can save time and make life easier for you, future you, and others.',
+                Suggests = 'usethis, testthat, knitr, rmarkdown, devtools'
+))
+3
+#' ### Add a license, e.g. MIT
+usethis::use_mit_license(name = 'Martin Skarzynski')
+#' ### Connect to github
+usethis::use_github(protocol = 'https')
+#' Check github to see your DESCRIPTION there
+#'
+#' ### Add a readme
+usethis::use_readme_md()
+```
+
+---
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 4
+
+```r
+#' # Step 3: write r code or move exist scripts to r folder
+#'
+#' ### create an r script in the r/ folder
+usethis::use_r('respect')
+#'
+#' ### use rstudio shortcut to add roxygen skeleton
+#' - windows/linux: ctrl+shift+alt+r
+#' - mac: cmd+shift+alt+r
+#' - [all shortcuts](https://support.rstudio.com/hc/en-us/articles/200711853-keyboard-shortcuts)
+#' fill in @param, @return, and add at least one example under @examples
+#'
+#' # Step 4: document functions with roxygen2 or devtools
+#'
+#' ### install `devtools` if not already installed
+if (!require(devtools)) install.packages('devtools')
+#' ### update namespace and create a `man` directory with an `.rd` file for each function
+devtools::document()
+```
+
+---
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 5
+
+```r
+#' # Step 5: Create unit tests to make sure your code works
+#' ### Install `testhat` if not already installed
+if (!require(testthat)) install.packages('testthat')
+#' ### Create `testhat` infrastructure
+usethis::use_testthat()
+#' ### Create a `testhat` unit test
+usethis::use_test('respect')
+#' ### Run the test suite (ok, it's just one test)
+devtools::test()
+#'
+#' # Step 6: Check if package is ready to share
+devtools::check()
+```
+
+---
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 6
+
+
+If your packages passes the check,
+just commit and push to github. 
+
+Finally, install and test your package.
+
+```r
+#' ### Test that the package is installable
+devtools::install_github('marskar/respect')
+library(respect)
+#' ### Test that the package works as expected
+respect::respect('you')
+```
+
+Congratulations! You did it!
+
+---
+
+background-image: url("pkg_dev.png")
+background-position: center
+background-size: contain
+
+#  usethis, testthat, roxygen2 &amp; devtools!
+
+
 
 ---
 # Thanks for listening!
+
+
+Let's 
+- show that we care
+- leverage the tools awesome people have made
+- work and learn out in the open together!
+
+Happy to take questions afterwards! Or just tweet at me!
+[![marskar_twitter](marskar.png)](https://twitter.com/marskar)
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
