@@ -137,11 +137,14 @@ by [Hilary Parker aka hspter](https://twitter.com/hspter)
 
 .center[<a href="https://github.com/marskar/rstudio#introduction-to-rstudio"><img src='rstudio_binder.png' width='800px'></img></a>]
 
+[My example RStudio Binder](http://beta.mybinder.org/v2/gh/marskar/intro2rstudio/master?urlpath=rstudio)
 
 ---
 # How to follow-along 3: [RStudio Cloud](https://rstudio.cloud/)
 
 .center[<a href="https://rstudio.cloud/"><img src='https://i.ytimg.com/vi/U-pLWJO6-P4/maxresdefault.jpg' width='800px'></img></a>]
+
+[My example RStudio Cloud project](https://rstudio.cloud/project/97375)
 
 ---
 # How to follow-along 4: [GitHub](https://github.com/)
@@ -300,6 +303,7 @@ background-image: url("pkg_dev.png")
 background-position: center
 background-size: contain
 
+--
 #  usethis, testthat, roxygen2 & devtools!
 
 
