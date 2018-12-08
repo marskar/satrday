@@ -154,7 +154,7 @@ by [Hilary Parker aka hspter](https://twitter.com/hspter)
 .center[<a href="https://github.com/marskar/respect"><img src='demo.png' width='800px'></img></a>]
 
 ---
-# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 1
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 1: [Line 1](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2#file-setup-r-L1)
 
 ```r
 #' ---
@@ -179,7 +179,7 @@ usethis::create_package('respect')
 ```
 
 ---
-# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 2
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 2: [Line 21](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2#file-setup-r-L21)
 
 ```r
 #' # Step 2: Set up version control and GitHub
@@ -205,7 +205,7 @@ usethis::edit_r_environ()
 ```
 
 ---
-# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 3
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 3: [Line 46](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2#file-setup-r-L46)
 
 ```r
 #' ### View DESCRIPTION defaults
@@ -217,7 +217,6 @@ usethis::use_description(
                 Description = 'This R Package demonstrates examples of best practices. It can save time and make life easier for you, future you, and others.',
                 Suggests = 'usethis, testthat, knitr, rmarkdown, devtools'
 ))
-3
 #' ### Add a license, e.g. MIT
 usethis::use_mit_license(name = 'Martin Skarzynski')
 #' ### Connect to github
@@ -229,7 +228,7 @@ usethis::use_readme_md()
 ```
 
 ---
-# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 4
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 4: [Line 76](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2#file-setup-r-L76)
 
 ```r
 #' # Step 3: write r code or move exist scripts to r folder
@@ -252,7 +251,7 @@ devtools::document()
 ```
 
 ---
-# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 5
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 5: [Line 94](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2#file-setup-r-L94)
 
 ```r
 #' # Step 5: Create unit tests to make sure your code works
@@ -270,7 +269,7 @@ devtools::check()
 ```
 
 ---
-# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 6
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2) 6: [Line 106](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2#file-setup-r-L106)
 
 
 If your packages passes the check,
@@ -286,6 +285,7 @@ library(respect)
 respect::respect('you')
 ```
 
+--
 Congratulations! You did it!
 
 ---
