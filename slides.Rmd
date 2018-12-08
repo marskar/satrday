@@ -286,6 +286,12 @@ respect::respect('you')
 ```
 
 --
+```r
+> respect::respect('you')
+[1] "I respect you"
+```
+
+--
 Congratulations! You did it!
 
 ---
@@ -303,8 +309,8 @@ background-size: contain
 
 
 Let's 
-- show that we care
-- leverage the tools awesome people have made
+- show that we care and respect each other's time
+- leverage the great tools awesome people have made
 - work and learn out in the open together!
 
 Happy to take questions afterwards! Or just tweet at me!
