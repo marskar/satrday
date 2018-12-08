@@ -52,7 +52,7 @@ Unleash the Jerry Maguire GIF! (Popularized by Jennifer Bryan)
 ---
 # What is a reprex?
 
-![reprex](reprex.png)
+[![reprex](reprex.png)](https://twitter.com/romain_francois/status/530011023743655936)
 
 
 ---
@@ -60,12 +60,12 @@ Unleash the Jerry Maguire GIF! (Popularized by Jennifer Bryan)
 
 Though Hadley prefers to call it a portmanteau.
 
-![port](port.png)
+[![port](port.png)](https://twitter.com/hadleywickham/status/530168226684993537)
 
 ---
 
 
-.center[<img src='punny.png' width='500px'></img>]
+.center[<a href="https://twitter.com/DynamicWebPaige/status/1071072962634280960"><img src='punny.png' width='500px'></img></a>]
 
 ---
 # Notebooks
