@@ -94,7 +94,7 @@ Though Hadley prefers to call it a portmanteau.
 7. Reusability - don't copy/paste, use functions, source scripts, load packages
 --
 
-8. Relax - work smarter, not harder, and automate Repetition tasks
+8. Relax - work smarter, not harder, and automate Repetitive tasks
 --
 
 9. Relay - information in your documentation
