@@ -22,8 +22,9 @@ options(htmltools.dir.version = FALSE)
   - at National Cancer Institute
 - Co-Chair, Bioinformatics & Data Science
   - at Foundation for Advanced Education in the Sciences
-- Website: https://marskar.github.io
 - Twitter: [@marskar](https://twitter.com/marskar)
+- Website: https://marskar.github.io
+- Slides: https://marskar.github.io/satrday/slides
 
 .center[<img src='https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg' width='300px'></img>]
 
@@ -113,64 +114,41 @@ by [Hilary Parker aka hspter](https://twitter.com/hspter)
 
 
 ---
-# Tim Hopper ([@tdhopper](https://twitter.com/tdhopper)) [likes notebooks](https://t.co/TjofhIRprv)
+# Minimal package demo
 
-![](brevity-burn.png)
-
----
-# DataFramed
-- [Podcast](https://www.datacamp.com/community/podcast) by [Hugo Bowne-Anderson (@hugobowne)](https://twitter.com/hugobowne)
-- [Episode 44](https://soundcloud.com/dataframed/project-jupyter-interactive-computing) with [Brian Granger (@ellisonbg)](https://twitter.com/ellisonbg)
-- [JupyterLab](https://soundcloud.com/dataframed/project-jupyter-interactive-computing)
-![](https://pbs.twimg.com/media/DpUHwwXW4AAGpfU.jpg)
+.center[<a href="https://github.com/marskar/respect"><img src='demo.png' width='800px'></img></a>]
 
 ---
-# [Yihui Xie (@xieyihui)](https://twitter.com/xieyihui)'s [Blog post](https://yihui.name/en/2018/09/notebook-war/)
-- I used [R markdown](https://rmarkdown.rstudio.com/) to make these slides!
-- No problems with version control
-- [R notebooks](https://rmarkdown.rstudio.com/r_notebooks) are just another output format!
-![](https://user-images.githubusercontent.com/163582/45173275-4fcc4800-b1cd-11e8-8f83-124ce7fac529.png)
+# Minimal package [gist](https://gist.github.com/marskar/ce0e2277733313afb1cc8ccfccab2bb2)
+
+```r
+#' ---
+#' title: "How to set up a project - R script"
+#' author: "Martin Skarzynki"
+#' date: "`r Sys.Date()`"
+#' output:
+#'  html_document:
+#'    keep_md: true
+#' ---
+#'
+#' # Step 1: Create a package/project
+#'
+#' ### Install `usethis` if not already installed
+if (!require(usethis)) install.packages('usethis')
+#'
+#' ### Create a new package called `respect`
+#'
+#' `usethis::create_package('respect')`
+#'
+#' New project will open, copy this script there
+```
 
 ---
+# Write packages!
 
-# Why use notebooks
-
-- [Literate programming](http://www.literateprogramming.com/)
-- Rendered by [GitHub](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks) and [nbviewer](http://nbviewer.jupyter.org/)
-- Google [colab](https://colab.research.google.com/)
-- [Kaggle kernels](https://towardsdatascience.com/introduction-to-kaggle-kernels-2ad754ebf77)
-- [Binder](https://mybinder.org/)
-
-![](https://user-images.githubusercontent.com/1510968/34175153-b8a79162-e4fb-11e7-81fe-c4794bc53442.png)
-
----
-# Notebook tools
-
-1. version control tool for notebooks - [nbdime](https://nbdime.readthedocs.io/en/latest/)
-2. work with Jupyter notebooks and scripts in parallel using [JupyText](https://github.com/mwouts/jupytext)
-3. configure notebooks to run on markdown (md) files with [notedown](https://github.com/aaren/notedown)
-4. create and run Jupyter notebooks from scripts and md files with [nbless](https://github.com/marskar/nbless)
-
-![](https://gist.githubusercontent.com/mwouts/13de42d8bb514e4acf6481c580feffd0/raw/b8dd28f44678f8c91f262da2381276fc4d03b00a/JupyterPyCharm.gif)
-
----
-# Write modules!
-
-- [Imports](https://docs.python.org/3/tutorial/modules.html)
-    1. Standard Library
-    2. Third Party
-    3. User Defined
-- Definitions
-    - [Classes](https://docs.python.org/3/tutorial/classes.html)
-    - Functions (for more check out Steven Lott's PyData DC tutorial)
-- [Type Hints](https://docs.python.org/3/library/typing.html)
-- [Docstrings](https://www.datacamp.com/community/tutorials/docstrings-python) (with examples!)
-- [`if __name__ == '__main__':`](https://docs.python.org/3/library/__main__.html)
-- Function call(s), e.g. `doctest.testmod(verbose=True)`
-- [doctest](https://docs.python.org/3/library/doctest.html): docstring examples -> test suite (with [`unittest` API](https://docs.python.org/3/library/doctest.html#unittest-api))
-- run test suite with [`unittest`](https://docs.python.org/3/library/unittest.html) or [`pytest`](https://docs.pytest.org/en/latest/)
-- use [cookiecutter](https://github.com/audreyr/cookiecutter#cookiecutter) for project structure
-- [deploy projects/packages to PyPI](https://packaging.python.org/tutorials/packaging-projects/)
+- usethis and devtools make it easy
+- work out in the open on GitHub
+- help others help you
 
 ---
 # Thanks for listening!
