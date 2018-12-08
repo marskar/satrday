@@ -100,19 +100,17 @@ Though Hadley prefers to call it a portmanteau.
 --
 
 ---
-# Joel doesn't like notebooks
+# Minimal packages
 
-- ["I Don't Like Notebooks"](https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/detail/68282) by [Joel Grus (@joelgrus)](https://twitter.com/joelgrus) at JupyterCon 2018
-- [Slides](https://t.co/30peBFwTbv)
-- [Video](https://youtu.be/7jiPeIFXb6U)
-- Modularity and Reusability
-
-![](joel-grus-jupytercon.png)
+.center[<a href="https://twitter.com/WeAreRLadies/status/1067861737137823744"><img src='minimal_pkg.png' width='500px'></img></a>]
+by [Charlotte Wickham aka CVWickham](https://twitter.com/CVWickham)
 
 ---
-# Joel also doesn't like vertical slides
+# Write a package from scratch
+by [Hilary Parker aka hspter](https://twitter.com/hspter)
 
-![](vertical-slides.png)
+.center[<a href="https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/"><img src='scratch.png' width='800px'></img></a>]
+
 
 ---
 # Tim Hopper ([@tdhopper](https://twitter.com/tdhopper)) [likes notebooks](https://t.co/TjofhIRprv)
