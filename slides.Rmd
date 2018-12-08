@@ -128,6 +128,27 @@ by [Hilary Parker aka hspter](https://twitter.com/hspter)
 .center[<a href="https://rawgit.com/rstudio/cheatsheets/master/package-development.pdf"><img src='devtools.png' width='800px'></img></a>]
 
 ---
+# How to follow-along 1: [Binder](https://mybinder.org/)
+
+.center[<a href="https://mybinder.org/"><img src='https://user-images.githubusercontent.com/1510968/34175153-b8a79162-e4fb-11e7-81fe-c4794bc53442.png' width='800px'></img></a>]
+
+---
+# How to follow-along 2: [RStudio Binder](https://github.com/binder-examples/r_with_python#r--python-binder-example)
+
+.center[<a href="https://github.com/marskar/rstudio#introduction-to-rstudio"><img src='rstudio_binder.png' width='800px'></img></a>]
+
+
+---
+# How to follow-along 3: [RStudio Cloud](https://rstudio.cloud/)
+
+.center[<a href="https://rstudio.cloud/"><img src='https://i.ytimg.com/vi/U-pLWJO6-P4/maxresdefault.jpg' width='800px'></img></a>]
+
+---
+# How to follow-along 4: [GitHub](https://github.com/)
+
+.center[<a href="https://github.com/"><img src='https://marketplace-cdn.atlassian.com/files/images/cec44feb-0b1b-4fe3-936d-67a51a1fe28e.png' width='800px'></img></a>]
+
+---
 # Minimal package demo
 
 .center[<a href="https://github.com/marskar/respect"><img src='demo.png' width='800px'></img></a>]
