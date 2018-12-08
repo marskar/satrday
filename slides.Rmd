@@ -68,16 +68,36 @@ Though Hadley prefers to call it a portmanteau.
 .center[<a href="https://twitter.com/DynamicWebPaige/status/1071072962634280960"><img src='punny.png' width='500px'></img></a>]
 
 ---
-# Notebooks
+# The 9 Rs of Really Rocking R projects
 
-[Jupyter notebooks](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html)
-- are data science tools
-- built on IPython by [Fernando Perez (@fperez_org)](https://twitter.com/fperez_org)
-- combine [Markdown](https://www.markdownguide.org/) text, code, and output
-- help data scientists communicate goals, methods, and results
-- used in [academia](https://www.oreilly.com/ideas/all-the-cool-kids-are-doing-it-maybe-we-should-too), and at many companies, e.g. [Amazon](https://www.oreilly.com/ideas/machine-learning-and-ai-technologies-and-platforms-at-aws), [Netflix](https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6), & [PayPal](https://medium.com/paypal-engineering/paypal-notebooks-powered-by-jupyter-fd0067bd00b0)
+<a href="https://commons.wikimedia.org/wiki/File:R_logo.svg#/media/File:R_logo.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png" width="300px"></a>
 
-.center[<img src='https://cdn-images-1.medium.com/max/2000/0*QLer52L9p-T72bGW' width='500px'></img>]
+1. Reprexes - in documentation, not just for solving problems!
+--
+
+2. R - don't use excel or proprietary tools
+--
+
+3. Reproducibility - use Rmarkdown/knitr/spin, packrat, pkgdown
+--
+
+4. Reliability - write tests with testthat
+--
+
+5. Research - don't Reinvent the wheel, know the ecosystem
+--
+
+6. Rigor - follow best practices and don't take shortcuts
+--
+
+7. Reusability - don't copy/paste, use functions, source scripts, load packages
+--
+
+8. Relax - work smarter, not harder, and automate Repetition tasks
+--
+
+9. Relay - information in your documentation
+--
 
 ---
 # Joel doesn't like notebooks
